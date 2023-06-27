@@ -2,7 +2,7 @@ import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import cn from "classnames";
 import { Link } from "gatsby";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function CoverImage({ title, fluid, slug }) {
   const image = (
