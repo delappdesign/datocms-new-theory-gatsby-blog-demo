@@ -24,12 +24,9 @@ export default function PostHeader({ title, coverImage, date, author }) {
         <Avatar name={author?.name} picture={author?.picture} />
         </motion.div>
       </div>
-      <motion.div className="mb-8 md:mb-16 -mx-5 sm:mx-0"
-        initial={{y: "10%"}}
-        whileInView={{y: "0"}}
-      >
+      <div className="mb-8 md:mb-16 -mx-5 sm:mx-0">
         <CoverImage title={title} fluid={coverImage?.gatsbyImageData} />
-      </motion.div>
+      </div>
       <div className="max-w-2xl mx-auto">
         <div className="block md:hidden mb-6">
           <Avatar name={author?.name} picture={author?.picture} />
