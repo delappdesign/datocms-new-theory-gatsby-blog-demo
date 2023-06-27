@@ -18,5 +18,11 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `datocms-plugin-web-previews`,
+      options: {
+        webhookUrl: `https://new-theory-gatsby-blog-demo.admin.datocms.com/api/previews`
+      }
+    }
   ],
 };
