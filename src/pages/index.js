@@ -14,18 +14,7 @@ export default function Index({ data: { allPosts, site, blog } }) {
   return (
     <Container>
       <HelmetDatoCms seo={blog.seo} favicon={site.favicon} />
-      {/* <motion.div
-        initial={{y: "20%"}}
-        animate={{y:"0"}}
-        transition={{duration: 0.5}}
-      > */}
         <Intro />
-      {/* </motion.div> */}
-      {/* <motion.section
-       initial={{y: "5%"}}
-       animate={{y: "0"}}
-       transition={{duration: 0.5}}
-      > */}
       {heroPost && (
         <HeroPost
           title={heroPost.title}
@@ -36,14 +25,7 @@ export default function Index({ data: { allPosts, site, blog } }) {
           excerpt={heroPost.excerpt}
         />
       )}
-      {/* </motion.section> */}
-      {/* <motion.div
-        initial={{y: "20%"}}
-        whileInView={{y: "0%"}}
-        transition={{duration: 1}}
-      > */}
       {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-      {/* </motion.div> */}
     </Container>
   );
 }
