@@ -5,6 +5,7 @@ import Intro from "../components/intro";
 import MoreStories from "../components/more-stories";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
+import { motion } from "framer-motion";
 
 export default function Index({ data: { allPosts, site, blog } }) {
   const heroPost = allPosts.nodes[0];
@@ -13,7 +14,18 @@ export default function Index({ data: { allPosts, site, blog } }) {
   return (
     <Container>
       <HelmetDatoCms seo={blog.seo} favicon={site.favicon} />
-      <Intro />
+      <motion.div
+        initial={{y: "20%"}}
+        animate={{y:"0"}}
+        transition={{duration: 0.5}}
+      >
+        <Intro />
+      </motion.div>
+      <motion.section
+       initial={{y: "5%"}}
+       animate={{y: "0"}}
+       transition={{duration: 0.5}}
+      >
       {heroPost && (
         <HeroPost
           title={heroPost.title}
@@ -24,7 +36,14 @@ export default function Index({ data: { allPosts, site, blog } }) {
           excerpt={heroPost.excerpt}
         />
       )}
+      </motion.section>
+      <motion.div
+        initial={{y: "20%"}}
+        whileInView={{y: "0%"}}
+        transition={{duration: 1}}
+      >
       {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+      </motion.div>
     </Container>
   );
 }

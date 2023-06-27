@@ -14,7 +14,6 @@ export default function Post({ data: { site, post, morePosts } }) {
       <HelmetDatoCms seo={post.seo} favicon={site.favicon} />
       <Header />
       <article>
-        <p>This is a test</p>
         <PostHeader
           title={post.title}
           coverImage={post.coverImage}
