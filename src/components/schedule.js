@@ -6,6 +6,11 @@ import 'react-big-calendar/lib/css/react-big-calendar.css'
 
 const localizer = dayjsLocalizer(dayjs)
 
+const calendarStyles = {
+    marginTop: 40,
+    marginBottom: 40,
+}
+
 const MyCalendar = (props) => (
   <div>
     <Calendar
@@ -14,7 +19,7 @@ const MyCalendar = (props) => (
       events={myEventsList}
       startAccessor="start"
       endAccessor="end"
-      style={{ height: 500 }}
+      style={{ height: 500, marginTop: 100 }}
     />
   </div>
 )
