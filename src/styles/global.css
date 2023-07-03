@@ -1,4 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import url('react-big-calendar/lib/sass/styles'); */
+
+.rbc-calendar {
+    color: white;
+    background-color: rgba(20, 68, 87);
+}
+
+.rbc-toolbar button {
+    color: white !important;
+    transition: 0.5s all;
+    border-radius: none !important;
+}
+
+button.rbc-active {
+    background-color:rgb(253, 216, 3) !important;
+    color: #172623 !important;
+}
+
+.rbc-toolbar button:hover {
+    background-color: rgb(253, 216, 3) !important;
+    color: #172623 !important;
+}   
+
+.rbc-event {
+    background-color: rgb(253, 216, 3) !important;
+    color: #144457 !important;
+    border: solid 1px black !important;
+} 
+
+.rbc-time-slot {
+    border: none !important;
+    background-color: rgba(20, 68, 87);
+}
+
+.rbc-timeslot-group {
+    border-bottom: none !important;
+}
+
+.rbc-time-header {
+    display: none !important;
+}
+
+.rbc-btn-group:nth-of-type(2) button:nth-child(1), button:nth-child(1), button:nth-child(4), button:nth-child(0) {
+    display: none !important;
+}

@@ -72,14 +72,15 @@ export default [
   {
     id: 10,
     title: 'Dinner',
-    start: new Date(2023, 3, 12, 20, 0, 0, 0),
+    start: new Date(2023, 6, 29, 20, 0, 0, 0),
     end: new Date(2023, 3, 12, 21, 0, 0, 0),
   },
   {
     id: 11,
     title: 'Planning Meeting with Paige',
-    start: new Date(2023, 3, 13, 8, 0, 0),
-    end: new Date(2023, 3, 13, 10, 30, 0),
+    allDay: true,
+    start: now,
+    end: now
   },
   {
     id: 11.1,
