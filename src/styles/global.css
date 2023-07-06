@@ -4,7 +4,7 @@
 
 .rbc-calendar {
     color: white;
-    background-color: rgba(20, 68, 87);
+    background-color: #057193;
 }
 
 .rbc-toolbar button {
@@ -25,13 +25,15 @@ button.rbc-active {
 
 .rbc-event {
     background-color: rgb(253, 216, 3) !important;
-    color: #144457 !important;
-    border: solid 1px black !important;
+    color: #172623 !important;
+    border: solid 3px black !important;
+    padding: 20px !important;
+    justify-content: center !important;
 } 
 
 .rbc-time-slot {
     border: none !important;
-    background-color: rgba(20, 68, 87);
+    background-color: #057193;
 }
 
 .rbc-timeslot-group {

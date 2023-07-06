@@ -12,6 +12,7 @@ const calendarStyles = {
 }
 
 const MyCalendar = (props) => (
+  
   <div>
     <Calendar
       defaultView={Views.DAY}
