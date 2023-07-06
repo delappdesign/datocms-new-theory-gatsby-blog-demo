@@ -11,18 +11,37 @@ const calendarStyles = {
     marginBottom: 40,
 }
 
-const MyCalendar = (props) => (
-  
-  <div>
-    <Calendar
-      defaultView={Views.DAY}
-      localizer={localizer}
-      events={myEventsList}
-      startAccessor="start"
-      endAccessor="end"
-      style={{ height: 500, marginTop: 100 }}
-    />
-  </div>
-)
+export default function MyCalendar(props) {
+  // function getBackgroundColor(props) {
+  //   console.log(props.style)
+  // }
 
-export default MyCalendar
+  return(
+    <div>
+       <Calendar
+          defaultView={Views.DAY}
+          localizer={localizer}
+          events={myEventsList}
+          startAccessor="start"
+          endAccessor="end"
+          style={{ height: 500, marginTop: 100 }}
+        />
+      </div>
+  );
+}
+
+// const MyCalendar = (props) => (
+  
+//   <div>
+//     <Calendar
+//       defaultView={Views.DAY}
+//       localizer={localizer}
+//       events={myEventsList}
+//       startAccessor="start"
+//       endAccessor="end"
+//       style={{ height: 500, marginTop: 100 }}
+//     />
+//   </div>
+// )
+
+// export default MyCalendar
