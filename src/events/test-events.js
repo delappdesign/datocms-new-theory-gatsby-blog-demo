@@ -13,6 +13,7 @@ export default [
     title: 'Long Event',
     start: new Date(2023, 3, 7),
     end: new Date(2023, 3, 10),
+    class: 'class-one'
   },
 
   {
